@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KSU-eB-cOD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="xOd-7g-ZVH">
+            <objects>
+                <tableViewController id="Y8Z-WU-1g0" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="oO8-vg-Ifc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="検索ワード" id="vAP-8p-NH9">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="Y8Z-WU-1g0" id="5hD-uO-WY0"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" id="eIO-dD-txT" customClass="ItemTableViewCell" customModule="HukushuuMySearchApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="414" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eIO-dD-txT" id="RR3-IP-OBe">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2fm-h5-72s">
+                                            <rect key="frame" x="10" y="10" width="100" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="mT4-du-Rho"/>
+                                                <constraint firstAttribute="width" constant="100" id="usG-B9-Ae8"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品名" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGj-eb-s77">
+                                            <rect key="frame" x="118" y="10" width="286" height="79"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="価格" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdB-Sj-zxQ">
+                                            <rect key="frame" x="118" y="89" width="286" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="pDz-yy-ChB"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="2fm-h5-72s" firstAttribute="top" secondItem="RR3-IP-OBe" secondAttribute="top" constant="10" id="52q-bB-p2i"/>
+                                        <constraint firstAttribute="trailing" secondItem="wdB-Sj-zxQ" secondAttribute="trailing" constant="10" id="ADZ-Uu-FTv"/>
+                                        <constraint firstItem="wdB-Sj-zxQ" firstAttribute="leading" secondItem="oGj-eb-s77" secondAttribute="leading" id="GBA-ws-A9O"/>
+                                        <constraint firstItem="2fm-h5-72s" firstAttribute="leading" secondItem="RR3-IP-OBe" secondAttribute="leading" constant="10" id="QP9-78-4Zr"/>
+                                        <constraint firstAttribute="bottom" secondItem="wdB-Sj-zxQ" secondAttribute="bottom" constant="10" id="RE7-Re-mhN"/>
+                                        <constraint firstItem="wdB-Sj-zxQ" firstAttribute="top" secondItem="oGj-eb-s77" secondAttribute="bottom" id="Zx1-ws-0GL"/>
+                                        <constraint firstItem="wdB-Sj-zxQ" firstAttribute="leading" secondItem="2fm-h5-72s" secondAttribute="trailing" constant="8" id="aBr-Ut-dGL"/>
+                                        <constraint firstItem="wdB-Sj-zxQ" firstAttribute="trailing" secondItem="oGj-eb-s77" secondAttribute="trailing" id="cO4-42-fIY"/>
+                                        <constraint firstItem="oGj-eb-s77" firstAttribute="top" secondItem="2fm-h5-72s" secondAttribute="top" id="dyl-52-laU"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="itemImageView" destination="2fm-h5-72s" id="7MX-Ko-SGD"/>
+                                    <outlet property="itemPriceLabel" destination="wdB-Sj-zxQ" id="FaG-X4-e6s"/>
+                                    <outlet property="itemTitleView" destination="oGj-eb-s77" id="ERs-R4-gSl"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Y8Z-WU-1g0" id="4oj-eS-TP6"/>
+                            <outlet property="delegate" destination="Y8Z-WU-1g0" id="0m9-jJ-sS1"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Pd2-JJ-50M"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rDo-MY-uvn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1021.7391304347827" y="146.65178571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Obo-uv-7Je">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KSU-eB-cOD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lkt-Ht-Ftw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y8Z-WU-1g0" kind="relationship" relationship="rootViewController" id="S96-Jt-x3P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hov-Re-DQQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="167" y="147"/>
+        </scene>
+    </scenes>
+</document>

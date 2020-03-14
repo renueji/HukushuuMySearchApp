@@ -1,0 +1,6 @@
+framework module Pods_HukushuuMySearchApp {
+  umbrella header "Pods-HukushuuMySearchApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

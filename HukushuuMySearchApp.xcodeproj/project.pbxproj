@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		188B86022414761F0058D3EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B86012414761F0058D3EB /* AppDelegate.swift */; };
+		188B86042414761F0058D3EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B86032414761F0058D3EB /* SceneDelegate.swift */; };
+		188B86062414761F0058D3EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B86052414761F0058D3EB /* ViewController.swift */; };
+		188B86092414761F0058D3EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188B86072414761F0058D3EB /* Main.storyboard */; };
+		188B860B241476210058D3EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 188B860A241476210058D3EB /* Assets.xcassets */; };
+		188B860E241476210058D3EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188B860C241476210058D3EB /* LaunchScreen.storyboard */; };
+		188B8617241478FF0058D3EB /* ItemSearchResultSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B8616241478FF0058D3EB /* ItemSearchResultSet.swift */; };
+		188B86192414797A0058D3EB /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B86182414797A0058D3EB /* ItemTableViewCell.swift */; };
+		188B861B24147A4B0058D3EB /* SearchItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B861A24147A4B0058D3EB /* SearchItemTableViewController.swift */; };
+		5924BD0688D6172C349F60FD /* Pods_HukushuuMySearchApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF99F95EC7EC49126E79A7F /* Pods_HukushuuMySearchApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		188B85FE2414761F0058D3EB /* HukushuuMySearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HukushuuMySearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		188B86012414761F0058D3EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		188B86032414761F0058D3EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		188B86052414761F0058D3EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		188B86082414761F0058D3EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		188B860A241476210058D3EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		188B860D241476210058D3EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		188B860F241476210058D3EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		188B8616241478FF0058D3EB /* ItemSearchResultSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSearchResultSet.swift; sourceTree = "<group>"; };
+		188B86182414797A0058D3EB /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		188B861A24147A4B0058D3EB /* SearchItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemTableViewController.swift; sourceTree = "<group>"; };
+		6D24BF77158BBDEFBF63838D /* Pods-HukushuuMySearchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HukushuuMySearchApp.release.xcconfig"; path = "Target Support Files/Pods-HukushuuMySearchApp/Pods-HukushuuMySearchApp.release.xcconfig"; sourceTree = "<group>"; };
+		CE3A7A6D40D556E8F8726F64 /* Pods-HukushuuMySearchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HukushuuMySearchApp.debug.xcconfig"; path = "Target Support Files/Pods-HukushuuMySearchApp/Pods-HukushuuMySearchApp.debug.xcconfig"; sourceTree = "<group>"; };
+		EDF99F95EC7EC49126E79A7F /* Pods_HukushuuMySearchApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HukushuuMySearchApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		188B85FB2414761F0058D3EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5924BD0688D6172C349F60FD /* Pods_HukushuuMySearchApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		188B85F52414761F0058D3EB = {
+			isa = PBXGroup;
+			children = (
+				188B86002414761F0058D3EB /* HukushuuMySearchApp */,
+				188B85FF2414761F0058D3EB /* Products */,
+				7BB20DA60403BA32146B4B19 /* Pods */,
+				D5287D1C03B2C41C530C0CC5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		188B85FF2414761F0058D3EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				188B85FE2414761F0058D3EB /* HukushuuMySearchApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		188B86002414761F0058D3EB /* HukushuuMySearchApp */ = {
+			isa = PBXGroup;
+			children = (
+				188B86012414761F0058D3EB /* AppDelegate.swift */,
+				188B86032414761F0058D3EB /* SceneDelegate.swift */,
+				188B86052414761F0058D3EB /* ViewController.swift */,
+				188B8616241478FF0058D3EB /* ItemSearchResultSet.swift */,
+				188B86182414797A0058D3EB /* ItemTableViewCell.swift */,
+				188B861A24147A4B0058D3EB /* SearchItemTableViewController.swift */,
+				188B86072414761F0058D3EB /* Main.storyboard */,
+				188B860A241476210058D3EB /* Assets.xcassets */,
+				188B860C241476210058D3EB /* LaunchScreen.storyboard */,
+				188B860F241476210058D3EB /* Info.plist */,
+			);
+			path = HukushuuMySearchApp;
+			sourceTree = "<group>";
+		};
+		7BB20DA60403BA32146B4B19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE3A7A6D40D556E8F8726F64 /* Pods-HukushuuMySearchApp.debug.xcconfig */,
+				6D24BF77158BBDEFBF63838D /* Pods-HukushuuMySearchApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D5287D1C03B2C41C530C0CC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDF99F95EC7EC49126E79A7F /* Pods_HukushuuMySearchApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		188B85FD2414761F0058D3EB /* HukushuuMySearchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 188B8612241476210058D3EB /* Build configuration list for PBXNativeTarget "HukushuuMySearchApp" */;
+			buildPhases = (
+				D7711615DFCE4038DE17A80A /* [CP] Check Pods Manifest.lock */,
+				188B85FA2414761F0058D3EB /* Sources */,
+				188B85FB2414761F0058D3EB /* Frameworks */,
+				188B85FC2414761F0058D3EB /* Resources */,
+				105F5DF99BFECFC79F1E7B64 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HukushuuMySearchApp;
+			productName = HukushuuMySearchApp;
+			productReference = 188B85FE2414761F0058D3EB /* HukushuuMySearchApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		188B85F62414761F0058D3EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Rentaro;
+				TargetAttributes = {
+					188B85FD2414761F0058D3EB = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 188B85F92414761F0058D3EB /* Build configuration list for PBXProject "HukushuuMySearchApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 188B85F52414761F0058D3EB;
+			productRefGroup = 188B85FF2414761F0058D3EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				188B85FD2414761F0058D3EB /* HukushuuMySearchApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		188B85FC2414761F0058D3EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188B860E241476210058D3EB /* LaunchScreen.storyboard in Resources */,
+				188B860B241476210058D3EB /* Assets.xcassets in Resources */,
+				188B86092414761F0058D3EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		105F5DF99BFECFC79F1E7B64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HukushuuMySearchApp/Pods-HukushuuMySearchApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HukushuuMySearchApp/Pods-HukushuuMySearchApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HukushuuMySearchApp/Pods-HukushuuMySearchApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7711615DFCE4038DE17A80A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HukushuuMySearchApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		188B85FA2414761F0058D3EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188B8617241478FF0058D3EB /* ItemSearchResultSet.swift in Sources */,
+				188B86062414761F0058D3EB /* ViewController.swift in Sources */,
+				188B86192414797A0058D3EB /* ItemTableViewCell.swift in Sources */,
+				188B86022414761F0058D3EB /* AppDelegate.swift in Sources */,
+				188B861B24147A4B0058D3EB /* SearchItemTableViewController.swift in Sources */,
+				188B86042414761F0058D3EB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		188B86072414761F0058D3EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				188B86082414761F0058D3EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		188B860C241476210058D3EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				188B860D241476210058D3EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		188B8610241476210058D3EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		188B8611241476210058D3EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		188B8613241476210058D3EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE3A7A6D40D556E8F8726F64 /* Pods-HukushuuMySearchApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2RC344KPBS;
+				INFOPLIST_FILE = HukushuuMySearchApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.rentarou1994.HukushuuMySearchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		188B8614241476210058D3EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D24BF77158BBDEFBF63838D /* Pods-HukushuuMySearchApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2RC344KPBS;
+				INFOPLIST_FILE = HukushuuMySearchApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.rentarou1994.HukushuuMySearchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		188B85F92414761F0058D3EB /* Build configuration list for PBXProject "HukushuuMySearchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188B8610241476210058D3EB /* Debug */,
+				188B8611241476210058D3EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		188B8612241476210058D3EB /* Build configuration list for PBXNativeTarget "HukushuuMySearchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188B8613241476210058D3EB /* Debug */,
+				188B8614241476210058D3EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 188B85F62414761F0058D3EB /* Project object */;
+}
